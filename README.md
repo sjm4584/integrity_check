@@ -3,4 +3,5 @@ It lets you check the integrity of files by creating an inital hash. Then every 
 A) restore from a backup
 B) create a new inital hash if you did intend to change the files.
 
-Currently the hashing of directories is not working, and flags errors every time. However, the single file one works flawlessly. 
+UPDATE:
+Both files and directory integrity check works, just be careful of where you put your script, as it creates files, thus triggering an integrity breach in directories.
