@@ -1,4 +1,5 @@
 #!/bin/bash
+#By Sean McConnell
 
 #---------------------------------------------------------------------------------------
 #There are two scenarios, with two cases:					       	|
@@ -11,7 +12,7 @@
 #	Case 1: Hashes match								|
 #-----------------------------------------						|
 #The inital hash and the current hash match, and the script takes a backup of the file.	|
-------------------------------------------						|
+#------------------------------------------						|
 #	Case 2: Hashes don't match							|
 #-----------------------------------------						|
 #The inital hash and current hash don't match. The script alerts the user by using the	|
