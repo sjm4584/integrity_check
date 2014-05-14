@@ -1,28 +1,28 @@
 #!/bin/bash
 
 #---------------------------------------------------------------------------------------
-#There are two scenarios, with two cases:					       	                              |
+#There are two scenarios, with two cases:					       	|
 #---------------------------------------------------------------------------------------|
-#				Scenario 1: Checking a file			       	                                        |
+#				Scenario 1: Checking a file			       	|
 #---------------------------------------------------------------------------------------|
 #The script creates an inital hash, 'inital_hash.md5'. Then every 5 seconds the script	|
 #creates a current hash, 'current_hash.md5', which is checked against the inital hash 	|
-#-----------------------------------------						                                  |
-#	Case 1: Hashes match								                                                  |
-#-----------------------------------------						                                  |
+#-----------------------------------------						|
+#	Case 1: Hashes match								|
+#-----------------------------------------						|
 #The inital hash and the current hash match, and the script takes a backup of the file.	|
-#------------------------------------------						                                  |
-#	Case 2: Hashes don't match							                                              |
-#-----------------------------------------						                                  |
+------------------------------------------						|
+#	Case 2: Hashes don't match							|
+#-----------------------------------------						|
 #The inital hash and current hash don't match. The script alerts the user by using the	|
-#'wall' command alerting all users that they've been compromised. Now you can either	  |
-#restore from a backup, or if you intended the change, you can create a new inital	    |
-#hash that will be used for the comparison						                                  |
+#'wall' command alerting all users that they've been compromised. Now you can either	|
+#restore from a backup, or if you intended the change, you can create a new inital	|
+#hash that will be used for the comparison						|
 #---------------------------------------------------------------------------------------|
-#				Scenario 2: Checking a directory			                                          |
+#				Scenario 2: Checking a directory			|
 #---------------------------------------------------------------------------------------|
-#You take a hash of all the files in the directory, then take a hash of all of the	    |
-#hashes.										                                                            |
+#You take a hash of all the files in the directory, then take a hash of all of the	|
+#hashes.										|
 #---------------------------------------------------------------------------------------
 
 main(){
